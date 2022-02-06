@@ -1,0 +1,18 @@
+title: My Familiarity Course.
+description: >-
+  Just getting to learn it in the regular course repository-Before adding bells
+  and whistles. 
+template:
+  repo: my-familiarity-course.-template
+  name: my-familiarity-course.
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
